@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "question": "Tell me about yourself",
+    "answer": "Your answer will be shown here."
+  },
+  {
+    "id": 2,
+    "question": "Why should we hire you?",
+    "answer": "Your answer will be shown here."
+  }
+]
