@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+/* Root colors */
+:root {
+  --background: #f9f9f9;
+  --foreground: #171717;
+  --primary: #4b6cb7;
+  --primary-dark: #182848;
+  --section-bg: #ffffff;
+  --section-border: #e2e8f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --section-bg: #1a1a1a;
+    --section-border: #333;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Page title */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--foreground);
+}
+
+/* Form styling */
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input {
+  flex: 1 1 250px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--section-border);
+  font-size: 16px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: var(--primary);
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+}
+
+/* Section styling */
+.section {
+  background: var(--section-bg);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--section-border);
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--foreground);
+}
+
+/* HackerNews list */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
